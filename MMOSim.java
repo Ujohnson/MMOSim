@@ -42,11 +42,11 @@ class Rogue extends Hero {
 
 	double attack() {
 
-		return atk*3;
+		return atk*4;
 	}
 
 	double defend() {
-		return def*2;
+		return def*2.5;
 	}
 
 
@@ -143,13 +143,13 @@ class PlayGame {
 		System.out.println(x);
 
 		if (x.equals("Warrior") ) {
-			ob = new Warrior(4.5, 200);
+			ob = new Warrior(3, 200);
 		}
 		else if (x.equals("Mage")) {
-			ob = new Mage(11, 100);
+			ob = new Mage(20, 50);
 		}
 		else {
-			ob = new Rogue(15, 50);
+			ob = new Rogue(10, 100);
 		}
 
 		return ob;
