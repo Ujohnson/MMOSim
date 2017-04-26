@@ -159,7 +159,7 @@ class PlayGame {
 		System.out.println("Do you want to Attack or Defend");
 		String atkOrDef = input();
 		if (atkOrDef.equals("Attack")) {
-			y.def = y.def - x.attack();
+			y.def = y.def - x.atk;
 			x.atk = x.attack();
 			System.out.println("Atk of attacker is now: " + x.atk);
 			System.out.println("Def of attacked is now: " + y.def);
