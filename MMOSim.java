@@ -165,7 +165,7 @@ class PlayGame {
 			System.out.println("Def of attacked is now: " + y.def);
 		}
 		else {
-			y.def = y.defend();
+			x.def = x.defend();
 			System.out.println("Character defended, defense is now: " + y.def);
 		}
 	}
